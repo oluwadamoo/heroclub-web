@@ -9,7 +9,7 @@ function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
 
     useEffect(() => {
         const getFriends = async () => {
-            const res = await axios.get("/api/users/friends/" + currentId)
+            const res = await axios.get("https://super-heroclub.herokuapp.com/api/users/friends/" + currentId)
             setFriends(res.data)
         }
         getFriends()
@@ -21,7 +21,7 @@ function ChatOnline({ onlineUsers, currentId, setCurrentChat }) {
 
     const gotoChat = async (user) => {
         try {
-            const res = await axios.get(`/api/conversations/find/${currentId}/${user._id}`)
+            const res = await axios.get(`https://super-heroclub.herokuapp.com/api/conversations/find/${currentId}/${user._id}`)
             setCurrentChat(res.data)
         } catch (e) {
             console.log(e)

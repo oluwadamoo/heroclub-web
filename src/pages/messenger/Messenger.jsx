@@ -56,7 +56,7 @@ function Messenger() {
     useEffect(() => {
         const getConversation = async () => {
             try {
-                const res = await axios.get('/api/conversations/' + user._id)
+                const res = await axios.get('https://super-heroclub.herokuapp.com/api/conversations/' + user._id)
 
                 setConversation(res.data)
             } catch (err) {
@@ -71,7 +71,7 @@ function Messenger() {
         const getMessages = async () => {
             try {
                 //console.log(currentChat)
-                const res = await axios.get("/api/messages/" + currentChat?._id)
+                const res = await axios.get("https://super-heroclub.herokuapp.com/api/messages/" + currentChat?._id)
                 setMessages(res.data)
             } catch (e) {
                 console.log(e)
@@ -96,7 +96,7 @@ function Messenger() {
             text: newMessage
         })
         try {
-            const res = await axios.post("/api/messages", message)
+            const res = await axios.post("https://super-heroclub.herokuapp.com/api/messages", message)
             setMessages([...messages, res.data])
             setNewMessage("")
         } catch (e) {

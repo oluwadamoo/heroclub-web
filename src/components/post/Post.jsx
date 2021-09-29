@@ -24,7 +24,7 @@ function Post({ post }) {
     useEffect(() => {
 
         const fetchUser = async () => {
-            const res = await axios.get(`/api/users?userId=${post.userId}`)
+            const res = await axios.get(`https://super-heroclub.herokuapp.com/api/users?userId=${post.userId}`)
             setUser(res.data)
         }
         fetchUser()
@@ -34,7 +34,7 @@ function Post({ post }) {
 
     const likeHandler = () => {
         try {
-            axios.put(`/api/posts/${post._id}/like`, ({ userId: currentUser._id }))
+            axios.put(`https://super-heroclub.herokuapp.com/api/posts/${post._id}/like`, ({ userId: currentUser._id }))
         } catch (err) {
             console.log(err)
         }

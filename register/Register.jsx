@@ -23,7 +23,7 @@ function Register() {
                 password: password.current.value,
             }
             try {
-                const res = await axios.post("/api/auth/register", user)
+                const res = await axios.post("https://super-heroclub.herokuapp.com/api/auth/register", user)
                 history.push('/login')
             }
             catch (err) {
@@ -40,7 +40,7 @@ function Register() {
                     <h3 className="loginLogo">Heroclub</h3>
                     <span className="loginDesc">
                         Connect with super heros in your multiverse and other multiverses on Heroclub
-                </span>
+                    </span>
                 </div>
                 <div className="loginRight">
                     <form className="loginBox" onSubmit={handleSubmit}>

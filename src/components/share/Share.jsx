@@ -38,7 +38,7 @@ function Share() {
 
 
         try {
-            await axios.post('/api/posts', newPost)
+            await axios.post('https://super-heroclub.herokuapp.com/api/posts', newPost)
             window.location.reload()
         } catch (e) {
             console.log(e)

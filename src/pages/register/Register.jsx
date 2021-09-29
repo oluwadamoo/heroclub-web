@@ -23,7 +23,7 @@ function Register() {
                 password: password.current.value,
             }
             try {
-                await axios.post("/api/auth/register", user)
+                await axios.post("https://super-heroclub.herokuapp.com/api/auth/register", user)
                 history.push('/login')
             }
             catch (err) {

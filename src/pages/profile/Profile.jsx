@@ -17,7 +17,7 @@ function Profile() {
     useEffect(() => {
 
         const fetchUser = async () => {
-            const res = await axios.get(`/api/users?username=${username}`)
+            const res = await axios.get(`https://super-heroclub.herokuapp.com/api/users?username=${username}`)
             // console.log(res)
             setUser(res.data)
         }
