@@ -11,7 +11,7 @@ import { Add, Remove } from "@material-ui/icons"
 
 
 function Rightbar({ user }) {
-    const PF = process.env.REACT_APP_PUBLIC_FOLDER
+
 
     const { user: currentUser } = useContext(AuthContext)
     const [friends, setFriends] = useState([])
@@ -52,12 +52,12 @@ function Rightbar({ user }) {
         return (
             <>
                 <div className="birthdayContainer">
-                    <img src={`${PF}gift.png`} alt="" className="birthdayImg" />
+                    <img src={`https://res.cloudinary.com/clean-codes/image/upload/v1632957213/gift_jk6sea.png`} alt="" className="birthdayImg" />
                     <span className="birthdayText">
                         <b>Bruce Wayne</b> and <b>3 other friends</b> have birthdays today
                     </span>
                 </div>
-                <img src={`${PF}ad.png`} alt="" className="rightbarAd" />
+                <img src={`https://res.cloudinary.com/clean-codes/image/upload/v1632957215/ad_y2rrvf.png`} alt="" className="rightbarAd" />
                 <h4 className="rightbarTitle">Online Friends</h4>
                 <ul className="rightbarFriendList">
                     {Users.map(u => (

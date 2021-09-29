@@ -1,52 +1,52 @@
 export const Users = [
   {
     id: 1,
-    profilePicture: "person/1.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956910/6_unb4d4.jpg",
     username: "Jane Foster",
   },
   {
     id: 2,
-    profilePicture: "person/2.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956910/3_xaaq8s.jpg",
     username: "Slade Wilson",
   },
   {
     id: 3,
-    profilePicture: "person/3.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956910/4_b9qyxc.jpg",
     username: "Aja Adanna",
   },
   {
     id: 4,
-    profilePicture: "person/4.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956909/1_juqok7.jpg",
     username: "Kitty Pryde",
   },
   {
     id: 5,
-    profilePicture: "person/5.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956909/2_obabl8.jpg",
     username: "Jean Grey",
   },
   {
     id: 6,
-    profilePicture: "person/6.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956910/5_de2uxc.jpg",
     username: "Wanda Maximoff",
   },
   {
     id: 7,
-    profilePicture: "person/7.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956913/7_x83krl.jpg",
     username: "T'Challa",
   },
   {
     id: 8,
-    profilePicture: "person/8.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956912/10_gpf2eh.jpg",
     username: "Natasha Romanoff",
   },
   {
     id: 9,
-    profilePicture: "person/9.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956909/2_obabl8.jpg",
     username: "Ororo Munroe",
   },
   {
     id: 10,
-    profilePicture: "person/10.jpeg",
+    profilePicture: "https://res.cloudinary.com/clean-codes/image/upload/v1632956910/5_de2uxc.jpg",
     username: "Harley Quinn",
   },
 ];
@@ -55,7 +55,7 @@ export const Posts = [
   {
     id: 1,
     desc: "Love For All, Hatred For None.",
-    photo: "post/1.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "5 mins ago",
     userId: 1,
     like: 32,
@@ -63,7 +63,7 @@ export const Posts = [
   },
   {
     id: 2,
-    photo: "post/2.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "15 mins ago",
     userId: 2,
     like: 2,
@@ -72,7 +72,7 @@ export const Posts = [
   {
     id: 3,
     desc: "Every moment is a fresh beginning.",
-    photo: "post/3.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "1 hour ago",
     userId: 3,
     like: 61,
@@ -80,7 +80,7 @@ export const Posts = [
   },
   {
     id: 4,
-    photo: "post/4.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "4 hours ago",
     userId: 4,
     like: 7,
@@ -88,7 +88,7 @@ export const Posts = [
   },
   {
     id: 5,
-    photo: "post/5.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "5 hours ago",
     userId: 5,
     like: 23,
@@ -96,7 +96,7 @@ export const Posts = [
   },
   {
     id: 6,
-    photo: "post/6.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "1 day ago",
     userId: 6,
     like: 44,
@@ -105,7 +105,7 @@ export const Posts = [
   {
     id: 7,
     desc: "Never regret anything that made you smile.",
-    photo: "post/7.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "2 days ago",
     userId: 7,
     like: 52,
@@ -113,7 +113,7 @@ export const Posts = [
   },
   {
     id: 8,
-    photo: "post/8.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "3 days ago",
     userId: 8,
     like: 15,
@@ -122,7 +122,7 @@ export const Posts = [
   {
     id: 9,
     desc: "Change the world by being yourself.",
-    photo: "post/9.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/9_yv0cfp.jpg",
     date: "5 days ago",
     userId: 9,
     like: 11,
@@ -130,7 +130,7 @@ export const Posts = [
   },
   {
     id: 10,
-    photo: "post/10.jpeg",
+    photo: "https://res.cloudinary.com/clean-codes/image/upload/v1632957196/7_raoykj.jpg",
     date: "1 week ago",
     userId: 10,
     like: 104,
