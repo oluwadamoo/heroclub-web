@@ -5,11 +5,14 @@ import { CircularProgress } from '@material-ui/core'
 import './login.css'
 import { loginCall } from '../../apiCalls'
 import { AuthContext } from '../../context/AuthContext'
+import { useHistory } from 'react-router-dom'
 
 function Login() {
     const email = useRef()
     const password = useRef()
     const { isFetching, dispatch } = useContext(AuthContext)
+
+    const history = useHistory()
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -31,7 +34,7 @@ function Login() {
                         <input type="password" placeholder="Password" className="loginInput" ref={password} minLength="6" required />
                         <button type="submit" className="loginButton" disabled={isFetching}>{isFetching ? <CircularProgress color="inherit" size="20px" /> : "Log In"}</button>
                         <span className="loginForgot">Forgot Password?</span>
-                        <button className="loginRegisterButton">{isFetching ? <CircularProgress color="inherit" size="20px" /> : "Create a New Account"}</button>
+                        <button className="loginRegisterButton" onClick={() => history.push('/register')}>{isFetching ? <CircularProgress color="inherit" size="20px" /> : "Create a New Account"}</button>
                     </form>
                 </div>
             </div>

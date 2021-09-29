@@ -49,7 +49,7 @@ function Register() {
                         <input type="password" placeholder="Password" className="loginInput" required ref={password} minLength="6" />
                         <input type="password" placeholder="Confirm Password" className="loginInput" required ref={confirmPassword} />
                         <button className="loginButton" type="submit">Sign Up</button>
-                        <button className="loginRegisterButton">Log into Account</button>
+                        <button className="loginRegisterButton" onClick={() => history.push('/login')}>Log into Account</button>
                     </form>
                 </div>
             </div>
