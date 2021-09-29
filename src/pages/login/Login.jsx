@@ -9,7 +9,7 @@ import { AuthContext } from '../../context/AuthContext'
 function Login() {
     const email = useRef()
     const password = useRef()
-    const { user, isFetching, error, dispatch } = useContext(AuthContext)
+    const { isFetching, dispatch } = useContext(AuthContext)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -23,7 +23,7 @@ function Login() {
                     <h3 className="loginLogo">Heroclub</h3>
                     <span className="loginDesc">
                         Connect with super heros in your multiverse and other multiverses on Heroclub
-                </span>
+                    </span>
                 </div>
                 <div className="loginRight">
                     <form className="loginBox" onSubmit={handleSubmit}>

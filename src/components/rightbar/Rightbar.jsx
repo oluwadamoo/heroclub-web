@@ -13,7 +13,7 @@ import { Add, Remove } from "@material-ui/icons"
 function Rightbar({ user }) {
     const PF = process.env.REACT_APP_PUBLIC_FOLDER
 
-    const { user: currentUser, dispatch } = useContext(AuthContext)
+    const { user: currentUser } = useContext(AuthContext)
     const [friends, setFriends] = useState([])
     const [followed, setFollowed] = useState(currentUser?.followings?.includes(user?._id))
 
@@ -55,7 +55,7 @@ function Rightbar({ user }) {
                     <img src={`${PF}gift.png`} alt="" className="birthdayImg" />
                     <span className="birthdayText">
                         <b>Bruce Wayne</b> and <b>3 other friends</b> have birthdays today
-                </span>
+                    </span>
                 </div>
                 <img src={`${PF}ad.png`} alt="" className="rightbarAd" />
                 <h4 className="rightbarTitle">Online Friends</h4>
